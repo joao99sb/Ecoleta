@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% set pageId = 'home-page' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="/css/modal.css">
+{% endblock style %}
+
+
+
+{% block content %}
+    <div class="container">
+    
+    <header>
+        <img src="../assets/logo.svg" alt="logo">
+        <a href="/register">
+            <span></span>
+            Cadastre um ponto de coleta
+        </a>
+    </header>
+
+    <main>
+        <h1>
+            Seu marketplace de <br>
+            coleta de residuos
+        </h1>
+        <p>
+            Ajudamos pessoas a encontrar pontos de coleta <br>
+            de forma eficiente
+        </p>
+        <a href="#modal"> <span></span> <strong>Pesquisar pontos de coleta</strong></a>
+    </main>
+
+
+
+{% endblock content %}
+
+
+{% block modal %}
+    {% include 'partial/modal.html'%}
+{% endblock modal %}
+
+{% block script %}
+    <script src="/js/modal.js"></script>
+{% endblock script %}

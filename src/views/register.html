@@ -1,0 +1,136 @@
+{% extends 'layout.html' %}
+
+{% set pageId = 'cadastro' %}
+
+{% block title %}
+    <title>Cadastre-se</title>
+{% endblock title %}
+
+{% block style %}
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/modal.css">
+
+{% endblock style %}
+
+{% block content %}
+
+    {% include 'partial/page-header.html'%}
+    <form action="/savepoint" method="post"> 
+        <h1>
+            Cadastro do <br>
+            ponto de coleta
+        </h1>
+        <fieldset>
+            <legend>
+                <h2>Dados da entidade</h2>
+            </legend>
+
+            <div class="field-group">
+            <div class="field" >
+                <label for="name">Nome da entidade</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="field" >
+                <label for="name">Imagem da entidade</label>
+                <input type="url" name="imagem" placeholder ="https://" > 
+            </div>
+            </div>
+
+
+
+
+            <div class="field-group">
+                <div class="field" class="field1">  
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" required>
+
+                </div>
+                <div class="field" class="field2">
+                    <label for="address">Número/Compelmento</label>
+                    <input type="text" name="address2" required>
+
+                </div>
+            </div>
+
+
+            <div class="field-group">
+                
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required >
+                        <option value="">Selecione o Estado</option>                            
+                    </select>
+                    <input type="hidden" name="state" >
+                </div>
+
+                <div class="field">
+                    <label for="city">Cidade</label disabled >
+                    <select name="city" required>
+                        <option value="">Selecione a cidade</option>    
+                    </select>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                <h2>Itens de coleta</h2>
+            </legend>
+
+            <div class="itens-grid">
+                <li data-id="Lâmpadas" >
+                    <img src="/assets/lampadas.svg" alt="Lâmpadas">
+                    <span>Lâmpadas</span>
+                </li>
+                <li data-id="Pilhas e Baterias">
+                    <img src="/assets/baterias.svg" alt="Pilhas e Baterias">
+                    <span>Pilhas e Baterias</span>
+                </li>
+                <li data-id="Papéis e Papelão">
+                    <img src="/assets/papeis-papelao.svg" alt="Papéis e Papelão">
+                    <span>Papéis e Papelão</span>
+                </li>
+                <li data-id="Resídos Eletrônicos">
+                    <img src="/assets/eletronicos.svg" alt="Resídos Eletônicos">
+                    <span>Resídos <br> Eletônicos</span>
+                </li>
+                <li data-id="Resídos Orgânicos">
+                    <img src="/assets/organicos.svg" alt="Resídos Orgânicos">
+                    <span>Resídos <br> Orgânicos </span>
+                </li>
+                <li data-id="Óleo de Cozinha">
+                    <img src="/assets/oleo.svg" alt="Óleo de Cozinha">
+                    <span>Óleo de Cozinha</span>
+                </li>
+                
+            </div>
+
+        </fieldset>
+
+        <input type="hidden" name="items">
+
+        <button type="submit">Cadastrar ponto de coleta</button>
+    </form>
+     
+{% endblock content %}
+        
+{% block modal %}
+    {% if saved %}
+        {%include "partial/created.html" %}
+    {% endif %}    
+{% endblock modal %}
+
+{% block script %}
+    <script src="/js/cadastro.js"></script>
+{% endblock script %}      
+       
+    
+
+
+    
+
+    
+

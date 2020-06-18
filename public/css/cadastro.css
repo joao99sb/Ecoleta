@@ -1,0 +1,134 @@
+#cadastro{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+header a {
+    color:var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+header a span{
+    background-image: url(/assets/arrow-left.svg);
+    width: 20px;
+    height: 24px;
+    display: flex;
+    margin-right: 16px;
+}
+
+
+
+form{
+    margin: 80px auto 0;
+    background-color: white;
+    padding: 64px;
+    border-radius: 10px;    
+    max-width: 730px;
+    
+}
+form h1{
+    font-size: 36px;
+}
+form fieldset{
+    margin-top:64px ;
+    border:0;
+}
+form legend{
+    margin-bottom: 40px;
+}
+form legend h2{
+    font-size: 24px;
+}
+form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+form .field-group{
+    display: flex;
+}
+form input, form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    
+}
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+form button{
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 19px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;    
+    transform: translateX(100%);
+    margin: 40px ;
+    transition: background-color 300ms;
+    
+}
+form button:hover{
+    background: #2fb86e;
+}
+
+
+.itens-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 16px;
+    
+}
+
+.itens-grid li {
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    border: 3px solid #f0f0f5 ;
+    background: #E1FAEC;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center ;
+    cursor: pointer;
+}   
+.itens-grid li span{
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+    
+}
+
+.itens-grid li.selected{
+    background: rgb(132, 247, 182) ;
+    border: 2px solid #34cb79;
+}
+.itens-grid li span, .itens-grid li img{
+    pointer-events: none;
+}
