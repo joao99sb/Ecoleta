@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./github/ecoleta.svg">
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="github\ecoleta.svg">
 </h1>
 
 <h4 align="center"> 
@@ -10,7 +10,7 @@
 
 ## 💻 Sobre o projeto
 
-♻️ Ecoleta - é um marketplace que facilita o encontro entre entidades de coleta de residos organicos e inorganicos
+♻️ Ecoleta - é um marketplace que facilita o encontro entre entidades de coleta de residos orgânicos e inorgânicos
 
 
 ## 🎨 Layout
