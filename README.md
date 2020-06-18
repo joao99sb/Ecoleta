@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./github/logo.svg">
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./.github/logo.svg">
 </h1>
 
 <h4 align="center"> 
@@ -15,12 +15,7 @@
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">
-  Figma
-</a>
-
+O layout da aplicação está disponível no <span href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">Figma</span>
 
 ### Web
 
