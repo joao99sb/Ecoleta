@@ -15,7 +15,7 @@
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no <a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">Figma</a>
+O layout da aplicação está disponível no <a href="https://www.figma.com/file/Byw4X5etg8VCmezueyhzkC/Ecoleta-(Starter)?node-id=136%3A546">Figma</a>
 
 ### Web
 
